@@ -1,0 +1,807 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px 'PT Sans Narrow', sans-serif;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+img {
+  max-width: 80vw;
+}
+
+.register {
+  background: #00E1BE;
+  border: none;
+  border-radius: 1.25rem;
+  color: #090C0B;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 3rem;
+  text-transform: uppercase;
+}
+
+.header {
+  background: #011913;
+}
+
+.header__content {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.header__introduction {
+  padding: 1.25rem;
+}
+
+.header__introduction img {
+  width: 80%;
+}
+
+.header__introduction p {
+  font-size: 1.2rem;
+  padding: 1.25rem 0;
+}
+
+.header__introduction span {
+  color: #00E1BE;
+}
+
+.presentation {
+  background: #001E1F;
+}
+
+.presentation__content {
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.presentation__content h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 1.25rem;
+}
+
+.presentation__content h3 span {
+  color: #00E1BE;
+}
+
+.presentation__content>span {
+  background: #00E1BE;
+  color: #090C0B;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  padding: 0 0.75rem;
+  text-transform: uppercase;
+}
+
+.presentation__content ul {
+  list-style: none;
+  padding: 1.25rem 0;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.presentation__content ul li::before {
+  content: "\2022";
+  color: #00E1BE;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.presentation__step-by-step {
+  padding: 1.875rem 0;
+}
+
+.presentation__step-by-step p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background: #036060;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  padding: 2.5rem 0;
+}
+
+.presentation__step-by-step span {
+  color: #001E1F;
+}
+
+.presentation__call-to-action {
+  margin-top: 300px;
+  font-size: 1.5rem;
+}
+
+.presentation__call-to-action>span {
+  color: #00E1BE;
+  text-transform: uppercase;
+}
+
+.presentation .register {
+  margin-top: 2.5rem;
+}
+
+.learn {
+  background: #001E1F;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.learn__top {
+  display: flex;
+  align-items: center;
+}
+
+.learn__top h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.learn__top h2 span {
+  background: #00E1BE;
+  color: #001E1F;
+  line-height: 2.2rem;
+}
+
+.learn__top>div {
+  width: 50%;
+}
+
+.learn__top>div img {
+  width: 100%;
+}
+
+.learn__content {
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 1.5rem 0;
+}
+
+.learn__content div p {
+  margin-bottom: 1rem;
+}
+
+.learn__content div p::before {
+  content: "\2022";
+  color: #00E1BE;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.learn__bottom h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.learn__bottom h3 span {
+  color: #00E1BE;
+}
+
+.program {
+  background: #E0E0E0;
+  padding: 1.25rem;
+  text-align: center;
+  color: #011C1C;
+}
+
+.program h2 {
+  color: #001E1F;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.program__about h3 {
+  color: #001E1F;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.program__about h3 span {
+  color: #00AA89;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.program__about p {
+  font-size: 1.3rem;
+}
+
+.bonus {
+  background: #001E1F;
+  padding: 1.25rem;
+}
+
+.bonus h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bonus h2 span {
+  color: #00E1BE;
+}
+
+.bonus__content h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  width: fit-content;
+  text-decoration: underline;
+}
+
+.bonus__content p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.bonus__content p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00AA89;
+}
+
+.price {
+  background: #E0E0E0;
+}
+
+.price>div {
+  padding: 1.25rem;
+  color: #001E1F;
+  text-align: center;
+}
+
+.price h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 1.25rem 0.5rem;
+}
+
+.price__value {
+  padding: 1.25rem 0;
+}
+
+
+.price__value h4 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.price__value p {
+  font-size: 1.25rem;
+  padding: 1rem 0;
+}
+
+.price__cost {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.price__fullPrice span {
+  color: #7A7A7A;
+  text-decoration: line-through;
+}
+
+.price__priceWithDiscount span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.price .register {
+  margin: 1rem 0;
+}
+
+.warranty {
+  background: #001E1F;
+}
+
+.warranty>div {
+  padding: 1.25rem 1.25rem 6rem;
+  text-align: justify;
+}
+
+.warranty h3 {
+  color: #00E1BE;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.warranty p {
+  font-size: 1.5rem;
+  letter-spacing: 0;
+}
+
+.footer {
+  background: #E0E0E0;
+  color: #1A1A1A;
+  position: relative;
+}
+
+.footer>div {
+  text-align: center;
+  padding: 5.625rem 0 3.75rem;
+}
+
+.footer img {
+  position: absolute;
+  top: -80px;
+  left: 26%;
+}
+
+.footer__top h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #00E1BE;
+}
+
+.footer h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+
+.footer__middle,
+.footer__bottom {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .register {
+    font-size: 3rem;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+
+  img {
+    width: auto;
+  }
+
+  .header__content {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1020px;
+    padding: 0;
+  }
+
+  .header__introduction {
+    padding: 0;
+  }
+
+  .header__introduction img {
+    width: auto;
+  }
+
+  .header__introduction p {
+    padding: 1.25rem 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    line-height: 3rem;
+    text-align: left;
+  }
+
+  .header::before {
+    content: "";
+    height: 80px;
+    width: 100%;
+    background: #00E1BE;
+    opacity: 0.57;
+    position: absolute;
+    right: 0;
+    top: 96px;
+  }
+
+  .header__image {
+    z-index: 1;
+  }
+
+  .presentation__content {
+    max-width: 1020px;
+    padding: 4rem 0;
+    margin: 0 auto;
+  }
+
+  .presentation__content h3 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .presentation__content>span {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .presentation__content ul {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2.8rem;
+    letter-spacing: 0.1rem;
+    margin: 1.25rem 0;
+  }
+
+  .presentation__step-by-step {
+    padding: 0;
+    font-size: 1.75rem;
+  }
+
+  .presentation__step-by-step p {
+    font-size: 1.75rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.8rem;
+    padding: 1.25rem 0;
+  }
+
+  .presentation__call-to-action {
+    margin-top: 250px;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .presentation__content button {
+    padding: 0.5rem 3rem;
+    width: auto;
+    font-size: 2rem;
+  }
+
+  .learn>div {
+    max-width: 1020px;
+    padding: 4rem 0;
+    margin: 0 auto;
+  }
+
+  .learn__top {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .learn__top>div {
+    width: auto;
+  }
+
+  .learn__top h2 {
+    font-size: 2.5rem;
+  }
+
+  .learn__content {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+  }
+
+  .learn__content>div {
+    width: 20%;
+    padding: 0 1.25rem;
+    border-right: 2px solid #00E1BE;
+    font-size: 1.5rem;
+  }
+
+  .learn__content div p::before {
+    content: '';
+    display: none;
+  }
+
+  .learn__bottom {
+    width: auto;
+  }
+
+  .learn__bottom h3 {
+    font-size: 2.5rem;
+    margin-bottom: 5.625rem;
+  }
+
+  .program__content {
+    width: 1020px;
+    margin: 0 auto;
+  }
+
+  .program__content h2 {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .program__about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #00211B;
+    padding: 2.5rem 0;
+    position: relative;
+    text-align: left;
+  }
+
+  .program__about>div {
+    width: 25%;
+  }
+
+  .program__about h3 {
+    line-height: 1.5rem;
+  }
+
+  .program__about h3 span {
+    font-size: 2rem;
+  }
+
+  .program__about p {
+    margin: 0.5rem 0 1.5rem;
+  }
+
+  .program__training-smart {
+    position: relative;
+  }
+
+  .program__training::before {
+    content: '';
+    height: 2px;
+    width: 105px;
+    background: #00AA89;
+    position: absolute;
+    left: 220px;
+    top: 28px;
+  }
+
+  .program__training::after {
+    content: '';
+    height: 32px;
+    width: 2px;
+    background: #00AA89;
+    position: absolute;
+    top: 28px;
+    left: 323px;
+  }
+
+  .program__smart::before {
+    content: '';
+    height: 50px;
+    width: 2px;
+    background: #00AA89;
+    position: absolute;
+    left: 228px;
+    top: 326px;
+  }
+
+  .program__smart::after {
+    content: '';
+    height: 2px;
+    width: 95px;
+    background: #00AA89;
+    position: absolute;
+    top: 374px;
+    left: 228px;
+  }
+
+  .program__seven-weeks::before {
+    content: '';
+    height: 123px;
+    width: 2px;
+    background: #00AA89;
+    position: absolute;
+    top: 307px;
+    left: 385px;
+  }
+
+  .program__seven-weeks::after {
+    content: '';
+    height: 150px;
+    width: 2px;
+    background: #00AA89;
+    position: absolute;
+    top: 280px;
+    left: 551px;
+  }
+
+  .program__canva-community {
+    position: relative;
+  }
+
+  .program__canva::before {
+    content: '';
+    height: 2px;
+    width: 139px;
+    background: #00AA89;
+    position: absolute;
+    top: 23px;
+    right: 258px;
+  }
+
+  .program__canva::after {
+    content: '';
+    height: 116px;
+    width: 2px;
+    background: #00AA89;
+    position: absolute;
+    top: 23px;
+    right: 395px;
+  }
+
+  .program__community::before {
+    content: '';
+    height: 2px;
+    width: 156px;
+    background: #00AA89;
+    position: absolute;
+    top: 388px;
+    right: 248px;
+  }
+
+  .program__community::after {
+    content: '';
+    height: 66px;
+    width: 2px;
+    background: #00AA89;
+    position: absolute;
+    top: 323px;
+    right: 248px;
+  }
+
+  .bonus>div {
+    width: 1020px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  .bonus h2 {
+    font-size: 6.5rem;
+    letter-spacing: 0.1rem;
+    padding: 2.5rem 0;
+  }
+
+  .bonus__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    margin: 0 3rem;
+  }
+
+  .bonus__content-border {
+    border-bottom: 1px solid #00AA89;
+  }
+
+  .bonus__content>div {
+    width: 30%;
+    padding: 1.25rem 0;
+  }
+
+  .bonus__content>div+div {
+    border-left: 1px solid #00AA89;
+    padding-left: 1.5rem;
+  }
+
+  .bonus__content h4 {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .bonus__content p {
+    letter-spacing: 0.1rem;
+  }
+
+  .price>div {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 55px 0 94px;
+    position: relative;
+  }
+
+  .price h3 {
+    font-size: 4rem;
+  }
+
+  .price__value h4 {
+    font-size: 2rem;
+  }
+
+  .price__value p {
+    font-size: 1.75rem;
+    padding: 0;
+  }
+
+  .price__cost {
+    font-size: 2.5rem;
+  }
+
+  .price__priceWithDiscount span {
+    font-size: 7rem;
+  }
+
+  .price .register {
+    font-size: 2rem;
+    position: absolute;
+    left: 33%;
+    bottom: -45px;
+    width: auto;
+    padding: 1rem 4rem;
+  }
+
+  .warranty>div {
+    width: 1020px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .warranty h3 {
+    margin: 1rem 0;
+  }
+
+  .warranty p {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    position: relative;
+  }
+
+  .footer>div {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 7rem 0 5rem;
+  }
+
+  .footer img {
+    position: absolute;
+    left: 46%;
+  }
+
+  .footer__top {
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 1.25rem;
+    justify-content: center;
+  }
+
+  .footer h3 {
+    font-size: 4rem;
+  }
+
+  .footer h4 {
+    font-size: 2.5rem;
+    width: 44%;
+    line-height: 2.5rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .footer__middle {
+    font-size: 1.2rem;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  .footer__bottom {
+    text-transform: initial;
+    padding: 0;
+  }
+}
