@@ -1,8 +1,3 @@
-<h1 align="center">
-  <img alt="Smart Money" title="Smart Money" src="assets/images/smart-money-inverted.svg" />
-</h1>
-
-<br>
 
 <p align="center">
   <img alt="Let me ask" src="assets/images/preview.png" width="100%">
